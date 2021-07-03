@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/circleshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bella_olonje_logo"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="46dp"/>
+
+
+    <TextView
+        android:id="@+id/ffeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circleshape"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="@font/sfproroundedbold"
+        android:text="Food for Everyone"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageView
+
+        android:id="@+id/transparentManImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ffeTextView"
+        android:layout_alignRight="@id/transparentWomanImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="70dp"
+        android:layout_alignBottom="@id/startButton"
+        android:scaleType="fitEnd"
+        android:src="@drawable/toyfaceman" />
+
+    <ImageView
+        android:id="@+id/transparentWomanImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_below="@+id/ffeTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/toyfacewoman"
+        android:layout_alignBottom="@id/startButton"/>
+
+    <ImageView
+        android:id="@+id/rectangMan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/rectangWoman"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rectangle_man" />
+
+    <ImageView
+        android:id="@+id/rectangWoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/startButton"
+        android:layout_marginBottom="-55dp"
+        android:layout_marginLeft="-100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rectangle_woman"
+        />
+
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcorners30"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/white"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="36dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+
+</RelativeLayout>
